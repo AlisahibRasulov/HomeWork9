@@ -27,8 +27,8 @@ dataImages.map((item) => {
   </div>
     `
 })
-slider.children[0].children[0].classList.add("active");
-// image.firstChild.classList.add("active");
+// slider.children[0].children[0].classList.add("active");
+image.firstElementChild.classList.add("active");
 
 
 
@@ -39,7 +39,8 @@ const rightBtnFunction = () => {
         activeImg.nextElementSibling.classList.add("active");
         activeImg.classList.remove("active");
     }else{
-        slider.children[0].children[0].classList.add("active");
+        // slider.children[0].children[0].classList.add("active");
+        image.firstElementChild.classList.add("active")
         activeImg.classList.remove("active")
     }
 };
@@ -50,8 +51,8 @@ const leftBtnFunction = () => {
         activeImg.previousElementSibling.classList.add("active");
         activeImg.classList.remove("active");
     }else{
-        slider.children[0].children[2].classList.add("active");
         // slider.firstChild.lastChild.classList.add("active")
+        image.lastElementChild.classList.add("active")
         activeImg.classList.remove("active");
     }
 }
